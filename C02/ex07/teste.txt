@@ -1,0 +1,26 @@
+#include <unistd.h>
+
+char *ft_strupcase(char *str)
+{
+    while (*str != '\0')
+    {
+        if ((*str >='a'+ 32) && (*str <= 'z' + 32))
+        {
+            //*str =+ 32;
+        write (1, str, 1);
+        }
+        str++;
+    }
+    return 0;
+}
+
+int main(void)
+{
+    char *c = "gilvicente";
+   
+   ft_strupcase(c);
+    write (1, "\n", 1);
+    return (0);
+}
+
+tentei algumas maneiras aqui não consigo add 32 em apenas um oif para converter para maiusculo um spring tentei 120 + 32 nao foi detalhe aqui acredit  eu
